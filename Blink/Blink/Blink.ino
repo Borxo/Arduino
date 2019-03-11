@@ -1,5 +1,5 @@
-int led = 13;
-int led1 = 12;
+#define led  13
+#define led1  12
 
 void setup()
 	{
