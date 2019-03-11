@@ -36,10 +36,7 @@ void loop()
 		}
 
 		Contador = 0;
-
-
-
-}
+	}
 
 void Numero(int Contador)
 	{
