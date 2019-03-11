@@ -1,10 +1,11 @@
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(2, 3, 4, 5, 6, 7);
 
-int led = 8;
-int led1 = 9;
-int ButtonA = 10;
-int ButtonB = 11;
+#define led  8
+#define led1  9
+#define ButtonA  10
+#define ButtonB  11
+
 void setup()
 	{
 		pinMode(ButtonA, INPUT);
