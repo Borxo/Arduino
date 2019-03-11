@@ -1,10 +1,10 @@
-int Trigger = 10;
-int Echo = 9;
-int Ambar = 13;
-int Verde = 12;
-int Rojo = 11;
+#define Trigger  10
+#define Echo  9
+#define Ambar  13
+#define Verde  12
+#define Rojo  11
 long duracion, distancia;
-int valor;
+
 
 void setup() 
 	{
