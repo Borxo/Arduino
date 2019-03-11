@@ -1,7 +1,7 @@
-int ping = 2;
-int Rojo = 7;
-int Ambar = 8;
-int Verde = 9;
+#define ping  2
+#define Rojo  7
+#define Ambar  8
+#define Verde  9
 long duracion, distancia;
 
 void setup()
