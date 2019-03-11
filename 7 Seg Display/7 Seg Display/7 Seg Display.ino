@@ -1,5 +1,3 @@
-int  Contador = 0;
-
 #define a 2
 #define b 3
 #define c 4
@@ -8,6 +6,7 @@ int  Contador = 0;
 #define f 7
 #define g 8
 
+int  Contador = 0;
 
 void setup()
 {
