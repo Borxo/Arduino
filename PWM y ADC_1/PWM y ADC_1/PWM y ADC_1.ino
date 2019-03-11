@@ -33,7 +33,7 @@ void loop()
 				digitalWrite(Led, HIGH);
 				digitalWrite(Led1, LOW);
 			}
-		else if (Velocidad == 0)
+		else if (Velocidad < 10)
 			{
 				analogWrite(enable, 0);
 				digitalWrite(Led1, HIGH);
