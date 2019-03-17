@@ -1,3 +1,6 @@
+//Blink//
+//Autor Borxo García 
+
 #define led  13
 #define led1  12
 
