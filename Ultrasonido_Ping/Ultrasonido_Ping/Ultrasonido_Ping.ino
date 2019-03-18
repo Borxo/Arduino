@@ -1,3 +1,6 @@
+//Ultrasonido_PING//
+//Autor Borxo García//
+
 #define ping  2
 #define Rojo  7
 #define Ambar  8
@@ -7,7 +10,6 @@ long duracion, distancia;
 void setup()
 	{
 		Serial.begin(9600);
-
 		pinMode(Rojo, OUTPUT);
 		pinMode(Ambar, OUTPUT);
 		pinMode(Verde, OUTPUT);
@@ -33,7 +35,7 @@ void loop()
 		digitalWrite(Rojo, HIGH);
 		Serial.print(distancia);
 		Serial.println("cm");
-		delay(100);
+		delay(1000);
 
 		if (distancia <= 70)
 			{
