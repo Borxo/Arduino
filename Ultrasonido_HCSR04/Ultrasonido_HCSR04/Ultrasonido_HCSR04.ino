@@ -1,8 +1,8 @@
-#define Trigger  10
-#define Echo  9
-#define Ambar  13
-#define Verde  12
-#define Rojo  11
+#define Trigger  3
+#define Echo  2
+#define Ambar  7
+#define Verde  8
+#define Rojo  9
 long duracion, distancia;
 
 
