@@ -31,7 +31,6 @@ void loop()
 		duracion = pulseIn(ping, HIGH);
 		distancia = duracion * 0.01723;
 
-
 		digitalWrite(Rojo, HIGH);
 		Serial.print(distancia);
 		Serial.println("cm");
