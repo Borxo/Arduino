@@ -1,3 +1,6 @@
+//Ultrasonidos_HCSR04//
+//Autor Borxo García//
+
 #define Trigger  3
 #define Echo  2
 #define Rojo  7
