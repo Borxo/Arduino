@@ -1,3 +1,6 @@
+//LCD_I2C//
+//Autor Borxo García//
+
 #include <LiquidCrystal.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
