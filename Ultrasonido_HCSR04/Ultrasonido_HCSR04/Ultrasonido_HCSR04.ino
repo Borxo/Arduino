@@ -35,7 +35,8 @@ void loop()
 
 		duracion = pulseIn(Echo, HIGH);
 		distancia = duracion * 10 / 292 / 2;
-		Serial.println(distancia);
+		Serial.print(distancia);
+		Serial.println("cm");
 		delay(1000);
 
 		if (distancia <= 70)
