@@ -6,6 +6,9 @@ LiquidCrystal lcd(2, 3, 4, 5, 6, 7);
 #define ButtonA  10
 #define ButtonB  11
 
+int ValorA; 
+int ValorB;
+
 void setup()
 	{
 		pinMode(ButtonA, INPUT);
@@ -24,8 +27,8 @@ void setup()
 void loop()
 	{
 
-		int  ValorA = digitalRead(ButtonA);
-		int ValorB = digitalRead(ButtonB);
+		ValorA = digitalRead(ButtonA);
+		ValorB = digitalRead(ButtonB);
 
 		if (ValorA == HIGH)
 			{
