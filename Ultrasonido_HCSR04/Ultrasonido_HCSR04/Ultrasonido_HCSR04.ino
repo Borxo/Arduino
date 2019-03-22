@@ -1,5 +1,5 @@
 //Ultrasonidos_HCSR04//
-//Autor Borxo García//
+//Autor Borxo GarcÃ­a//
 
 #define Trigger  3
 #define Echo  2
@@ -7,7 +7,8 @@
 #define Ambar  8
 #define Verde  9
 
-long duracion, distancia;
+long duracion;
+int distancia;
 
 
 void setup() 
@@ -18,6 +19,8 @@ void setup()
 		pinMode(Rojo, OUTPUT);
 		pinMode(Verde, OUTPUT);
 		pinMode(Ambar, OUTPUT);
+		digitalWrite(Trigger, LOW);
+		delayMicroseconds(40);
 	}
 
 
@@ -30,16 +33,16 @@ void loop()
 		digitalWrite(Trigger, LOW);
 		delayMicroseconds(4);
 		digitalWrite(Trigger, HIGH);
-		delayMicroseconds(20);
+		delayMicroseconds(10);
 		digitalWrite(Trigger, LOW);
 
 		duracion = pulseIn(Echo, HIGH);
-		distancia = duracion * 10 / 292 / 2;
+		distancia = duracion/58;
 		Serial.print(distancia);
 		Serial.println("cm");
 		delay(1000);
 
-		if (distancia <= 70)
+		if (distancia <= 20)
 			{
 				digitalWrite(Rojo, HIGH);
 				delay(5000);
