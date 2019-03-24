@@ -1,8 +1,12 @@
-#define Led 4
-#define Led1 5
+#define Led 5
+#define Led1 4
 #define enable 3
 #define MotorDerecha 9
 #define MotorIzquierda 10 
+
+float Analogico; 
+float Control;
+float Val; 
 
 
 
