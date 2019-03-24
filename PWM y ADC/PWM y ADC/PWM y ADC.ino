@@ -6,6 +6,10 @@
 #define MotorIzquierda 10 
 #define enable 3
 
+float Analogico; 
+float Control;
+float Val; 
+
 
 void setup()
   {
@@ -19,24 +23,31 @@ void setup()
   
 void loop()
   {
-     digitalWrite(MotorDerecha, HIGH);
-     digitalWrite(MotorIzquierda, LOW);
-    float Velocidad = (5.0/1024)*analogRead(A0);
-    float Control=(1/(0.072*Velocidad+0.006))-0.42;
+    digitalWrite(MotorDerecha, HIGH);
+    digitalWrite(MotorIzquierda, LOW);
+    Analogico = (5.0/1024)*analogRead(A0);
+    Control=(1/(0.072*Analogico+0.006))-0.42;
+	Val = map(Control, 4, 20, 0, 255);
     analogWrite(enable, Control);
 
     Serial.print(Control);
     Serial.print("cm     ");
-    Serial.print(Velocidad);
-    Serial.println("V");
+
+    Serial.print(Analogico);
+    Serial.println("V    ");
+	
+	Serial.print(Val);
+	Serial.println("V Convertido");
     delay(1000);
 
-    if (Velocidad > 0)
+
+    if (Val > 6)
       {
         digitalWrite(Led, HIGH);
         digitalWrite(Led1, LOW);
       }
-    else if (Velocidad == 0)
+
+    else if (Val < 5)
       {
         digitalWrite(Led1, HIGH);
         digitalWrite(Led, LOW);
