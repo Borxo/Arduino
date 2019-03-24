@@ -45,7 +45,7 @@ void loop()
 
 	if (Val >= 8)
 	{
-		analogWrite(enable, Control);
+		analogWrite(enable, Val);
 		digitalWrite(Led, HIGH);
 		digitalWrite(Led1, LOW);
 	}
