@@ -1,4 +1,4 @@
-//PWM y ADC//
+//PWM y ADC_1//
 //Autor Borxo García//
 
 #define Led 5
@@ -6,7 +6,7 @@
 #define enable 3
 #define MotorDerecha 9
 #define MotorIzquierda 10 
-#define enable 3
+
 
 float Analogico;
 float Control;
