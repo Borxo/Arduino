@@ -1,3 +1,5 @@
+// 7 Seg Display//
+//Autor Borxo García//
 #define a 2
 #define b 3
 #define c 4
