@@ -41,7 +41,7 @@ void loop()
     delay(1000);
 
 
-    if (Val > 6)
+    if (Val > 8)
       {
         digitalWrite(Led, HIGH);
         digitalWrite(Led1, LOW);
