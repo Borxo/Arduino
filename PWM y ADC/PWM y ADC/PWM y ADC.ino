@@ -29,7 +29,7 @@ void loop()
     Analogico = (5.0/1024)*analogRead(A0);
     Control=(1/(0.072*Analogico+0.006))-0.42;
 	Val = map(Control, 4, 20, 0, 255);
-    analogWrite(enable, Control);
+    analogWrite(enable, Val);
 
     Serial.print(Control);
     Serial.print("cm     ");
