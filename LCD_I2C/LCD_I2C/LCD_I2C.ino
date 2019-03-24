@@ -1,7 +1,7 @@
 //LCD_I2C//
 //Autor Borxo García//
 
-#include <LiquidCrystal.h>
+//#include <LiquidCrystal.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 #include <LCD.h>
@@ -28,6 +28,7 @@ void setup()
 		lcd.home();
 		lcd.begin(16, 2);
 		lcd.setCursor(3, 1);
+		digitalWrite(led1, HIGH);
 		lcd.print("Verde");
 		delay(1000);
 	}
