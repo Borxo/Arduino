@@ -5,7 +5,9 @@
 #define Rojo  7
 #define Ambar  8
 #define Verde  9
-long duracion, distancia;
+
+long duracion;
+int distancia;
 
 void setup()
 	{
@@ -29,7 +31,7 @@ void loop()
 
 		pinMode(ping, INPUT);
 		duracion = pulseIn(ping, HIGH);
-		distancia = duracion * 0.01723;
+		distancia = duracion/58;
 
 		digitalWrite(Rojo, HIGH);
 		Serial.print(distancia);
