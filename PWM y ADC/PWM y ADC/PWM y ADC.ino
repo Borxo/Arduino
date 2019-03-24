@@ -4,7 +4,6 @@
 #define enable 3
 #define MotorDerecha 9
 #define MotorIzquierda 10 
-#define enable 3
 
 float Analogico; 
 float Control;
