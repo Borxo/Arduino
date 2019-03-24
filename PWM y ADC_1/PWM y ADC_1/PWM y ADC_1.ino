@@ -36,10 +36,10 @@ void loop()
 	Serial.print("cm     ");
 
 	Serial.print(Analogico);
-	Serial.println("V    ");
+	Serial.print("V    ");
 
 	Serial.print(Val);
-	Serial.println("V Convertido");
+	Serial.println("Rango");
 	delay(1000);
 
 
