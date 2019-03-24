@@ -1,3 +1,5 @@
+//PWM y ADC//
+//Autor Borxo García//
 
 #define Led 5
 #define Led1 4 
@@ -28,7 +30,7 @@ void loop()
 	Analogico = (5.0 / 1024)*analogRead(A0);
 	Control = (1 / (0.072*Analogico + 0.006)) - 0.42;
 	Val = map(Control, 4, 20, 0, 255);
-	analogWrite(enable, Control);
+	
 
 	Serial.print(Control);
 	Serial.print("cm     ");
@@ -41,8 +43,9 @@ void loop()
 	delay(1000);
 
 
-	if (Val > 6)
+	if (Val > 8)
 	{
+		analogWrite(enable, Control);
 		digitalWrite(Led, HIGH);
 		digitalWrite(Led1, LOW);
 	}
