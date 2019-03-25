@@ -43,14 +43,14 @@ void loop()
 	delay(1000);
 
 
-	if (Val >= 10)
+	if (Distancia >= 10)
 	{
 		analogWrite(enable, Val);
 		digitalWrite(Led, HIGH);
 		digitalWrite(Led1, LOW);
 	}
 
-	else if (Val < 10)
+	else if (Distancia < 10)
 	{
 		digitalWrite(Led1, HIGH);
 		digitalWrite(Led, LOW);
