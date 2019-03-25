@@ -42,13 +42,13 @@ void loop()
     delay(1000);
 
 
-    if (Val >= 10)
+    if (Val >= 8)
       {
         digitalWrite(Led, HIGH);
         digitalWrite(Led1, LOW);
       }
 
-    else if (Val < 10)
+    else if (Val < 5)
       {
         digitalWrite(Led1, HIGH);
         digitalWrite(Led, LOW);
