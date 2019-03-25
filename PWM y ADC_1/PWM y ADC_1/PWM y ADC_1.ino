@@ -9,7 +9,7 @@
 
 
 float Analogico;
-float Control;
+float Distancia;
 float Val;
 
 
@@ -28,11 +28,11 @@ void loop()
 	digitalWrite(MotorDerecha, HIGH);
 	digitalWrite(MotorIzquierda, LOW);
 	Analogico = (5.0 / 1024)*analogRead(A0);
-	Control = (1 / (0.072*Analogico + 0.006)) - 0.42;
-	Val = map(Control, 4, 20, 0, 255);
+	Distancia = (1 / (0.072*Analogico + 0.006)) - 0.42;
+	Val = map(Distancia,6, 20, 0, 255);
 	
 
-	Serial.print(Control);
+	Serial.print(Distancia);
 	Serial.print("cm     ");
 
 	Serial.print(Analogico);
