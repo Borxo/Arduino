@@ -29,8 +29,8 @@ void loop()
 	digitalWrite(MotorIzquierda, LOW);
 	Analogico = (5.0 / 1024)*analogRead(A0);
 	Distancia = (1 / (0.072*Analogico + 0.006)) - 0.42;
-	Val = map(Distancia,6, 20, 0, 255);
-	
+	Val = map(Distancia, 6, 20, 0, 255);
+
 
 	Serial.print(Distancia);
 	Serial.print("cm     ");
@@ -51,7 +51,10 @@ void loop()
 	}
 
 	else if (Distancia < 10)
-	{
+	{   
+		Val = 0,
+		analogWrite(enable, Val);
 		digitalWrite(Led1, HIGH);
 		digitalWrite(Led, LOW);
 	}
+}
