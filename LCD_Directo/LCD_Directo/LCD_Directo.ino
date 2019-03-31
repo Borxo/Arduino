@@ -1,5 +1,6 @@
 //LCD_Directo//
-//Autor Borxo García//
+//Autor Borxo GarcÃ­a//
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
 
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(2, 3, 4, 5, 6, 7);
