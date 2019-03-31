@@ -111,7 +111,7 @@ void Numero(int Contador)
 		digitalWrite(e, HIGH);
 		digitalWrite(f, HIGH);
 		digitalWrite(g, HIGH);
-		break;
+		break; 
 	case 7:
 		digitalWrite(a, HIGH);
 		digitalWrite(b, HIGH);
