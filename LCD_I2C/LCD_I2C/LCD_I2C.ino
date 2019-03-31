@@ -1,12 +1,13 @@
 //LCD_I2C//
-//Autor Borxo García//
+//Autor Borxo GarcÃ­a//
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
 
 //#include <LiquidCrystal.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 #include <LCD.h>
 
-//LiquidCrystal_I2C lcd(Dirección,E, RW, RS, D4, D3, D2, D1, D0, Estado);
+//LiquidCrystal_I2C lcd(DirecciÃ³n,E, RW, RS, D4, D3, D2, D1, D0, Estado);
 LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);
 
 #define led  8
