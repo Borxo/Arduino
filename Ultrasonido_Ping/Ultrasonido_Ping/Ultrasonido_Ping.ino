@@ -1,5 +1,6 @@
 //Ultrasonido_PING//
-//Autor Borxo García//
+//Autor Borxo GarcÃ­a//
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
 
 #define ping  2
 #define Rojo  7
