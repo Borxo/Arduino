@@ -1,5 +1,6 @@
 //Blink//
-//Autor Borxo García 
+//Autor Borxo GarcÃ­a 
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
 
 #define led  13
 #define led1  12
