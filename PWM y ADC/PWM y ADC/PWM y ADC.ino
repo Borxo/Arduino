@@ -1,5 +1,6 @@
 //PWM y ADC//
-//Autor Borxo García//
+//Autor Borxo GarcÃ­a//
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
 
 #define Led 5
 #define Led1 4 
