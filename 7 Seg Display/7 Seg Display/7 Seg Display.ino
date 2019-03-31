@@ -1,5 +1,7 @@
 // 7 Seg Display//
-//Autor Borxo García//
+//Autor Borxo GarcÃ­a//
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
+
 #define a 2
 #define b 3
 #define c 4
