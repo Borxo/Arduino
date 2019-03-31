@@ -1,5 +1,6 @@
 //Ultrasonidos_HCSR04//
 //Autor Borxo García//
+//Licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional.//
 
 #define Trigger  3
 #define Echo  2
